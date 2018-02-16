@@ -1,0 +1,43 @@
+.block{
+	width: 100%;
+}
+
+
+.navbar-item{
+	font-weight: bold;
+	font-size: 16px;
+	color:#4F4F4F;
+	margin-top:10px;
+	
+}
+.navbar-dropdown  {
+	display:none;
+
+}
+
+.has-dropdown a:hover{
+color:black;
+}
+.con{
+height: 50px;
+margin-top: 10px;	
+}
+
+
+.logos{
+	float: left;
+	height: 100px;
+
+}
+.logos a{
+margin-top: 23px;
+display: inline-block;
+width: 40px;}
+.logos a:hover{
+	background-color: white;
+	color:black;
+}
+
+*{
+	font-family: Arial, Helvetica, sans-serif;
+}
