@@ -1,0 +1,51 @@
+<div class="wrapper">
+
+
+  <div class="navbarr columns is-mobile">
+    <div class="handler column is-3">
+      <span (click)="drop()"><i class="fas fa-bars"></i></span>
+    </div>
+    <div class="menu column is-5" [class.display] ="a">
+      <ul>
+        <div (click) = "dropNav()" class="dropdown ">
+          <span>
+            <li>HOMEPAGE <i class="fas fa-caret-down"></i></li>
+            <div  *ngIf="b" class="dropdown-content">
+              <a routerLink="main">Main</a>
+              <a routerLink="home-vtwo">V2</a>
+            </div>
+          </span>
+        </div>
+        <div class="dropdown " (click)="dropNav1()">
+          <span>
+            <li>POST PAGE <i class="fas fa-caret-down"></i></li>
+            <div *ngIf="c" class="dropdown-content">
+              <a routerLink="postv">post</a>
+            </div>
+          </span>
+        </div>
+        <div class="dropdown" (click)="dropNav2()">
+          <span>
+            <li>ABOUT <i class="fas fa-caret-down"></i></li>
+            <div *ngIf="d" class="dropdown-content">
+              <a routerLink="aboutv">about</a>
+            </div>
+          </span>
+        </div>
+      <a routerLink="contact"><li>CONTACT</li></a>
+      </ul>
+    </div>
+    <div class="column is-offset-2"></div>
+    <div class="logos column is-2">
+
+        <a><i class="fab fa-twitter"></i></a>
+        <a><i class="fab fa-google-plus-g"></i></a>
+        <a><i class="fab fa-linkedin-in"></i></a>
+        <a><i class="fab fa-instagram"></i></a>
+
+    </div>
+
+  </div>
+
+
+</div>
