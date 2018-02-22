@@ -17,7 +17,6 @@ export class HeaderComponent {
   d: boolean = false;
 
 
-
   drop() {
     if (this.a) {
       this.a = false;
@@ -34,6 +33,7 @@ export class HeaderComponent {
       this.b = true;
     }
   }
+
   dropNav1() {
     if (this.c) {
       this.c = false;
@@ -41,6 +41,7 @@ export class HeaderComponent {
       this.c = true;
     }
   }
+
   dropNav2() {
     if (this.d) {
       this.d = false;

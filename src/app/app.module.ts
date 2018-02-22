@@ -18,7 +18,6 @@ import { NewsService } from './news.service';
 import {ArticleService} from './article.service';
 
 
-
 @NgModule({
   declarations: [
     AppComponent,
@@ -39,6 +38,7 @@ import {ArticleService} from './article.service';
   ],
   providers: [NewsService,
               ArticleService],
+
   bootstrap: [AppComponent]
 })
 export class AppModule { }
