@@ -8,27 +8,27 @@
     </div>
     <div class="menu column is-5" [class.display] ="a">
       <ul>
-        <div (click) = "dropNav()" class="dropdown ">
-          <span>
+        <div appDisplay class="dropdown ">
+          <span >
             <li>HOMEPAGE <i class="fas fa-caret-down"></i></li>
-            <div  *ngIf="b" class="dropdown-content">
+            <div class="dropdown-content">
               <a routerLink="main">Main</a>
               <a routerLink="home-vtwo">V2</a>
             </div>
           </span>
         </div>
-        <div class="dropdown " (click)="dropNav1()">
+        <div appDisplay class="dropdown ">
           <span>
             <li>POST PAGE <i class="fas fa-caret-down"></i></li>
-            <div *ngIf="c" class="dropdown-content">
+            <div  class="dropdown-content">
               <a routerLink="postv">post</a>
             </div>
           </span>
         </div>
-        <div class="dropdown" (click)="dropNav2()">
+        <div appDisplay class="dropdown">
           <span>
             <li>ABOUT <i class="fas fa-caret-down"></i></li>
-            <div *ngIf="d" class="dropdown-content">
+            <div class="dropdown-content">
               <a routerLink="aboutv">about</a>
             </div>
           </span>

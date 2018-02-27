@@ -4,18 +4,19 @@ import { AppRoutingModule } from './router/router.module';
 
 
 import { AppComponent } from './app.component';
-import {HeaderComponent} from './header/header.component';
-import {ContainerComponent} from './container/container.component';
-import { MainComponent } from './main/main.component';
-import { NewsComponent } from './news/news.component';
-import { ArticleContainerComponent } from './article-container/article-container.component';
-import { HomeVtwoComponent } from './home-vtwo/home-vtwo.component';
-import { PostvComponent } from './postv/postv.component';
-import { AboutvComponent } from './aboutv/aboutv.component';
-import { ContactComponent } from './contact/contact.component';
-import { FooterComponent } from './footer/footer.component';
-import { NewsService } from './news.service';
-import {ArticleService} from './article.service';
+import { HeaderComponent } from './components/header/header.component';
+import { ContainerComponent } from './components/container/container.component';
+import { MainComponent } from './components/main/main.component';
+import { NewsComponent } from './components/news/news.component';
+import { ArticleContainerComponent } from './components/article-container/article-container.component';
+import { HomeVtwoComponent } from './components/home-vtwo/home-vtwo.component';
+import { PostvComponent } from './components/postv/postv.component';
+import { AboutvComponent } from './components/aboutv/aboutv.component';
+import { ContactComponent } from './components/contact/contact.component';
+import { FooterComponent } from './components/footer/footer.component';
+import { NewsService } from './services/news.service';
+import { ArticleService } from './services/article.service';
+import { DisplayDirective } from './display.directive';
 
 
 @NgModule({
@@ -30,7 +31,11 @@ import {ArticleService} from './article.service';
     PostvComponent,
     AboutvComponent,
     ContactComponent,
-    FooterComponent
+    FooterComponent,
+    DisplayDirective
+  ],
+  exports:[
+    DisplayDirective
   ],
   imports: [
     BrowserModule,

@@ -2,14 +2,14 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 
 
-import { MainComponent } from '../main/main.component';
-import { ContainerComponent } from '../container/container.component';
-import { NewsComponent } from '../news/news.component';
-import { ArticleContainerComponent } from '../article-container/article-container.component';
-import { HomeVtwoComponent } from '../home-vtwo/home-vtwo.component';
-import { PostvComponent } from '../postv/postv.component';
-import { AboutvComponent } from '../aboutv/aboutv.component';
-import { ContactComponent } from '../contact/contact.component';
+import { MainComponent } from '../components/main/main.component';
+import { ContainerComponent } from '../components/container/container.component';
+import { NewsComponent } from '../components/news/news.component';
+import { ArticleContainerComponent } from '../components/article-container/article-container.component';
+import { HomeVtwoComponent } from '../components/home-vtwo/home-vtwo.component';
+import { PostvComponent } from '../components/postv/postv.component';
+import { AboutvComponent } from '../components/aboutv/aboutv.component';
+import { ContactComponent } from '../components/contact/contact.component';
 
 
 const routes: Routes = [
