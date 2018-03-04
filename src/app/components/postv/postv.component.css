@@ -1,8 +1,6 @@
 .wrapper{
   width: 100%;
 }
-.container{
-  width: 50%;
-  margin-left: 10%;
-  float: left;
+.columns{
+  background-color: #F5F5F5;
 }

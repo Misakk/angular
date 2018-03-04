@@ -1,11 +1,10 @@
-import { Component, OnInit, trigger, state, style, transition, animate, keyframes  } from '@angular/core';
-import { ArticleService } from '../../services/article.service';
-
+import {animate, Component, keyframes, OnInit, style, transition, trigger} from '@angular/core';
+import { ArticleService } from '../../../services/article.service';
 
 @Component({
-  selector: 'app-article-container',
-  templateUrl: './article-container.component.html',
-  styleUrls: ['./article-container.component.css'],
+  selector: 'app-v2article',
+  templateUrl: './v2article.component.html',
+  styleUrls: ['./v2article.component.css'],
   animations: [
 
     trigger('movePanel', [
@@ -20,12 +19,11 @@ import { ArticleService } from '../../services/article.service';
     ])
   ]
 })
-export class ArticleContainerComponent implements OnInit {
+export class V2articleComponent implements OnInit {
   i = 0;
   images: string[];
   popularImg: string[];
   resentImg: string[];
-  followImg: string[];
   image: string;
   state = 'inactive';
   constructor(private articleService: ArticleService) { }
@@ -38,10 +36,6 @@ export class ArticleContainerComponent implements OnInit {
   getresentImg() {
     this.resentImg = this.articleService.getresentImg();
   }
-  getfollowImg() {
-    this.followImg = this.articleService.getfollowImg();
-  }
-
 
   onclickRight() {
     if (this.i === this.images.length - 1) {
@@ -65,24 +59,21 @@ export class ArticleContainerComponent implements OnInit {
   }
   circle1() {
     return this.image = this.images[0];
-    }
+  }
   circle2() {
     return this.image = this.images[1];
-    }
+  }
   circle3() {
     return this.image = this.images[2];
-    }
+  }
   toggleFromUp() {
     this.state = (this.state === 'inactive' ? 'active' : 'inactive');
 
   }
-
-
   ngOnInit() {
     this.getimages();
     this.getpopularImg();
     this.getresentImg();
-    this.getfollowImg();
     this.circle1();
     this.circle2();
     this.circle3();
@@ -90,6 +81,5 @@ export class ArticleContainerComponent implements OnInit {
     this.onclickRight();
     this.toggleFromUp();
   }
-
 
 }

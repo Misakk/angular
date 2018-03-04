@@ -1,0 +1,69 @@
+<div class="wrapper columns">
+  <div class="wr column is-1"></div>
+  <div class="rightContainer column is-7">
+
+
+    <div class="aboutme">
+      <img src="https://mdbootstrap.com/img/Photos/Avatars/img%20(33).jpg" alt="nkar">
+      <p>Hello, I'm Martha. I've 23 years old and my biggest passion is photography. I love travel around the world and take photos of wild animals, landscapes and local people.</p><br>
+      <div class="iconn">
+        <button class="icons"><i class="fab fa-facebook-f"></i></button>
+        <button class="icons"><i class="fab fa-twitter"></i></button>
+        <button class="icons"><i class="fab fa-google-plus-g"></i></button>
+      </div>
+      <br><br>
+    </div>
+    <br><br>
+    <div class="RECENT">
+      <div class="hed"><h2 class="q">POPULAR POSTS</h2></div>
+      <br>
+      <div class="respost">
+        <div *ngFor="let resentimg of resentImg">
+          <img [src] = 'resentimg' alt="nkar">
+          <div class="resp">
+            <span class="resP1">This is news title</span><br>
+            <span class="resP2">July 22, 2017</span><br>
+          </div>
+
+          <div class="clear"></div>
+          <br>
+        </div>
+        <img src="http://all-photo.ru/wallpaper/photos/14511.jpg" alt="nkar">
+        <div class="resp">
+          <span class="resP1">This is news title</span><br>
+          <span class="resP2">July 22, 2017</span><br>
+        </div>
+
+        <div class="clear"></div>
+        <br><br>
+
+      </div>
+    </div>
+    <br><br>
+    <div class="NEWSLETTER">
+      <div class="hed"><h2 class="q">NEWSLETTER</h2></div>
+      <br>
+      <div class="field">
+        <div class="control">
+          <button class="button">@</button><input class="input" type="text" placeholder="username">
+        </div>
+      </div>
+      <button class="sign">SIGN UP</button>
+      <br>
+    </div>
+    <br><br>
+    <div class="archieve">
+      <div class="hed"><h2 class="q">ARCHIEVE</h2></div>
+      <br>
+      <p>August 2016</p>
+      <p>July 2016</p>
+      <p>June 2016</p>
+      <p>May 2016</p>
+      <p>April 2016</p>
+      <p>March 2016</p>
+      <p>February 2016</p>
+      <br>
+    </div>
+  </div>
+</div>
+

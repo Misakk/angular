@@ -33,43 +33,5 @@ export class ArticleService {
     return this.followImg;
   }
 
-  i: number = 0;
-  link: string = this.images[this.i];
-  white: string = '';
 
-  onclickRight() {
-    if (this.i == this.images.length - 1) {
-      this.i = 0;
-      this.link = this.images[this.i];
-    } else {
-      ++this.i
-      this.link = this.images[this.i];
-    }
-
-  }
-  onclickLeft() {
-    if (this.i === 0) {
-      this.i = this.images.length - 1;
-      this.link = this.images[this.i];
-
-    } else {
-      --this.i;
-      this.link = this.images[this.i];
-    }
-  }
-  circle1() {
-    this.link = this.images[0];
-
-
-  }
-  circle2() {
-    this.link = this.images[1];
-    this.white = 'white';
-
-  }
-  circle3() {
-    this.link = this.images[2];
-    this.white = 'white';
-
-  }
 }

@@ -1,43 +1,25 @@
 .footer{
   background-color: #3E4551;
-
 }
 .clear{
   clear: both;
 }
-.footerContainer{
-  width: 20%;
-  float: left;
-  margin: 0px 30px 0px 30px;
-}
-
 .footerContainer p{
   text-align: left;
   color: white;
   font-size: 14px;
   padding-top: 16px;
-  padding-left: 80px;
 }
 .footerContainer span {
   padding-right: 5px;
 }
 .footerContainer h5{
   font-weight: normal;
-  text-align: center;
+  text-align: left;
   color: white;
   padding-top: 16px;
-  padding-right: 10px;
 }
 
-.footerContainer1{
-  width: 20%;
-  float: left;
-  height: 100px;
-  margin-left: 70px;
-
-
-
-}
 .footerContainer1 p{
   text-align: left;
   color: white;
@@ -56,11 +38,6 @@ hr{
   margin: auto;
 }
 
-.copyright{
-  width: 30%;
-  float: left;
-}
-
 .copyright span{
   color: #929394;
   font-weight: normal;
@@ -72,10 +49,7 @@ hr{
   font-size: 14px;
   font-weight: bold;
 }
-.icons{
-  width: 30%;
-  float: right;
-}
+
 .icons div{
   margin: auto;
   padding-top: 40px;
@@ -95,3 +69,4 @@ hr{
   box-shadow: 0 10px 12px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   transition: 600ms;
 }
+

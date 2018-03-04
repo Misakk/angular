@@ -2,10 +2,9 @@
   width:40%;
   float:right;
 }
-img {
+img{
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
-
 .clear {
   clear: both;
 }
@@ -171,7 +170,6 @@ img {
   left: 10px;
   opacity: 0.7;
   z-index: 1;
-
 }
 .right{
   position: absolute;
@@ -246,19 +244,6 @@ img {
   font-size: 16px;
   color:#555555;
 }
-
-.follow div{
-  width: 40%;
-  float: left;
-  height: 100px;
-  margin: 10px 10px 10px 10px;
-}
-.follow img{
-  height: 100px;
-  width: 100%;
-}
-
-
 
 @media screen and (max-width: 1024px) {
   .wrapper{

@@ -1,19 +1,18 @@
 .wrapper{
-  width:40%;
-  float:right;
+  margin-top:0px;
+  width:100%;
 }
-img {
+img{
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
-
 .clear {
   clear: both;
 }
 
 .rightContainer{
+  border-radius: 5px;
   margin-left: 30px;
-  margin-top: 14px;
-  background-color:#ECEFF1;
+  margin-top: 92px;
 }
 
 
@@ -21,6 +20,11 @@ img {
   font-size: 14px;
   text-align: center;
   font-weight: 550;
+}
+.aboutme{
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 .aboutme img{
   height: 250px;
@@ -52,18 +56,23 @@ img {
   color:white;
   transition: 0.5s;
 }
-.popularposts img{
-  height: 220px;
-  width: 250px;
-  display: block;
-  margin:auto;
-  margin-bottom: 10px;
+.RECENT{
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  padding-top: 20px;
 }
-.popularposts img:hover{
-  opacity: 0.8;
-  transition: 0.5s;
+.hed{
+  padding-top:15px;
+  width: 80%;
+  margin: auto;
+  background-color:#F5F5F5;
+  height: 50px;
+}
+.hed h2{
+  padding: auto;
+}
 
-}
 .tit1{
   font-size: 14px;
   text-align: center;
@@ -74,13 +83,17 @@ img {
   font-style:italic;
   color:#A09F9E;
 }
+.NEWSLETTER{
+  padding-top: 20px;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
 .NEWSLETTER input{
   width: 80%;
-
 }
-
 .sign{
-  width: 90%;
+  width: 80%;
 
   background: #616161;
   background-image: -webkit-linear-gradient(top, #616161, #616161);
@@ -114,9 +127,9 @@ img {
 }
 .respost img{
   display: block;
-  text-align: left;
-  height: 80px;
-  width: 100px;
+  margin-left: 10px;
+  height: 60px;
+  width: 75px;
   float:left;
 }
 .respost img:hover{
@@ -150,94 +163,11 @@ img {
 .clear{
   clear:both;
 }
-.slider{
-  position:relative;
-  width: 80%;
-  height: 170px;
-  margin:auto;
-
-}
-
-.slider img{
-  display: block;
-  width: 100%;
-  height: 170px;
-}
-
-.left{
-  position: absolute;
-  height: 100%;
-  top: 45%;
-  left: 10px;
-  opacity: 0.7;
-  z-index: 1;
-
-}
-.right{
-  position: absolute;
-  height: 100%;
-  top: 45%;
-  right: 10px;
-  opacity: 0.7;
-  z-index: 1;
-}
-.sliderText{
-  text-align: center;
-  width: 100%;
-  height: 70px;
-  position: absolute;
-  top: 60px;
-  z-index:0;
-}
-.sliderContent{
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  background-color: black;
-  opacity:0.5;
-}
-
-.sliderP1{
-  font-size: 20px;
-}
-.sliderP2{
-  font-size: 12px;
-}
-.sliderText p{
-  color:white;
-  text-align:center;
-}
-
-.left span{
-  font-size: 20px;
-  color:#A09F9E;
-}
-.left span:hover{
-  color: white;
-}
-.right span:hover{
-  color: white;
-}
-.right span{
-  font-size: 20px;
-  color:#A09F9E;
-}
-
-
-.circles{
-  position: absolute;
-  width:100%;
-  bottom:10px;
-  text-align: center;
-  opacity: 0.7;
-
-}
-.circles span{
-  font-size: 12px;
-  color:#A09F9E;
-}
-.circles span:hover{
-  color: white;
+.archieve{
+  padding-top: 20px;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 .archieve p {
   text-align: center;
@@ -247,22 +177,7 @@ img {
   color:#555555;
 }
 
-.follow div{
-  width: 40%;
-  float: left;
-  height: 100px;
-  margin: 10px 10px 10px 10px;
-}
-.follow img{
-  height: 100px;
-  width: 100%;
+.height{
+  height: 279px;
 }
 
-
-
-@media screen and (max-width: 1024px) {
-  .wrapper{
-    width: 90%;
-    margin: auto;
-  }
-}

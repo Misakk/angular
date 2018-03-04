@@ -1,0 +1,21 @@
+<div class="wrapper">
+<div class="slider">
+  <div (click) = "onclickLeft()" (click) = "toggleFromUp()" class="left"><span><i class="fas fa-chevron-left"></i></span></div>
+  <div (click) = "onclickRight()" (click) = "toggleFromUp()" class="right"><span><i class="fas fa-chevron-right"></i></span></div>
+  <img [src]='image' alt="nkar" [@movePanel] = 'state'>
+  <div class="circles">
+    <span (click) = "circle1()" (click) = "toggleFromUp()" ><i class="fas fa-circle"></i></span>
+    <span (click) = "circle2()" (click) = "toggleFromUp()" ><i class="fas fa-circle"></i></span>
+    <span (click) = "circle3()" (click) = "toggleFromUp()" ><i class="fas fa-circle"></i></span>
+  </div>
+</div>
+
+<div class="hello">
+  <h4 class="title is-6">HELLO WORLD!</h4>
+  <h1 class="title is-2">Welcome on my blog</h1>
+  <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem
+    aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae sit aspernatur aut odit aut
+    fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi.</p>
+</div>
+  <hr>
+</div>

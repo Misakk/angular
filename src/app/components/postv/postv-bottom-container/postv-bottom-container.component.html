@@ -1,0 +1,38 @@
+<div class="wrapper">
+  <div class="columns">
+    <div class="column is-1"></div>
+    <div class="about column is-3">
+      <h3 class="title is-6 h">ABOUT</h3>
+      <div class="line"></div>
+      <br><br>
+      <img src="http://photography-cameras.org/images/stories/wide-angle-lens.jpg" alt="nkar">
+      <br><br>
+      <p>Sed ut in perspiciatis unde omnis iste natus error sit on i <br>
+        tatem accusantium doloremque laudantium, totam rem <br>
+        aperiam, eaque ipsa quae.</p>
+      <br>
+    </div>
+    <div class="latest column is-4">
+      <h3 class="title is-6 h">LATESTS POSTS</h3>
+      <div class="line"></div>
+      <br><br>
+      <div *ngFor="let image of images">
+      <div class="columns">
+      <div class="column is-3"><img [src]="image" alt="nkar"></div>
+        <div class="column is-9"> <p>Sed ut in perspiciatis unde omnis</p><span>July 22, 2017</span></div>
+      </div>
+      </div>
+    </div>
+    <div class="older column is-4">
+      <h3 class="title is-6 h">OLDER POSTS</h3>
+      <div class="line"></div>
+      <br><br>
+      <div *ngFor="let image of images">
+        <div class="columns">
+          <div class="column is-3"><img [src]="image" alt="nkar"></div>
+          <div class="column is-9"> <p>Sed ut in perspiciatis unde omnis</p><span>July 22, 2017</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
